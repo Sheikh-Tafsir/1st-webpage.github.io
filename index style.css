@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 /*icon begins*/
 .icons{
     background-color: rgb(56, 86, 196);
@@ -313,7 +310,7 @@
 @media screen and (max-width: 1000px) {
     .cpy p{
         margin:0;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 @media screen and (min-width: 1000px) {
