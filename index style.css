@@ -217,7 +217,7 @@
         color:white;
     }
     .tail p,a{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .contacts{
         padding:20px 40px;
@@ -307,6 +307,14 @@
     text-align:center;
     padding:15px 0;
 }
-.cpy p{
-    margin:0;
+@media screen and (min-width: 1000px) {
+    .cpy p{
+        margin:0;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .cpy p{
+        margin:0;
+    }
 }
