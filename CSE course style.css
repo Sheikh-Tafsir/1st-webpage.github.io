@@ -1,0 +1,259 @@
+/*icon begins*/
+.icons{
+  background-color: rgb(56, 86, 196);
+  color:white;
+  display:flex;
+}
+
+.work-hour{
+  width:23%;
+  text-align: right;
+}
+.imail{
+  width:2%;
+  text-align: right;
+  padding:15px 5px;
+  
+}
+.imail a{
+  color:white;
+}
+.mail{
+  width:25%;
+  text-align:left;
+}
+.icon{
+  width:50%;
+  text-align: right;
+  padding:15px 100px;
+
+}
+.icon-style{
+  color:white;
+  padding:5px;
+  border:1px solid white;
+  border-radius: 50%;
+  margin:0 5px;
+  transition:transform 0.3s;
+}
+.icon-style:hover{
+  transform:scale(1.2);
+}
+
+/*icon ends*/
+
+/*header begin*/
+@media screen and (max-width: 1000px) {
+  .header{
+  }
+  .headlogo{
+    text-align: center;
+  }
+  .headname{
+    text-align: center;
+  }
+  .headmenu{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding:20px;
+  }
+  .headmenu a{
+    text-decoration: none;
+    background-color:rgb(106, 133, 230);
+    border-radius:10px;
+    color:black;
+    font-size: 2rem;
+    font-weight:bold;
+    padding:10px;
+    margin:5px 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header{
+    display:flex;
+  }
+  .headlogo{
+    width:15%;
+    text-align:right;
+  }
+  .headname{
+    width:40%;
+  }
+  .headmenu{
+    text-align:center;
+    width:45%;
+    padding:20px;
+  }
+  .headmenu a{
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    font-weight:bold;
+    padding:0 20px;
+  }
+}
+
+
+.headmenu a:hover{
+  background-color: rgb(100, 116, 145);
+  border-radius: 10px;
+}
+/*header end*/
+
+/*slideshow begin*/
+.slideshow{
+    display:flex;
+    overflow:hidden;
+    -webkit-animation: slide 20s ease infinite;
+    
+}
+
+@media screen and (max-width: 1000px) {
+  .slide{
+    padding:0;
+    margin:0 20px;
+    
+  }
+  .slide img{
+    height:500px;
+    width:900px;
+    transition:transform 0.2s;
+
+  }
+
+  @-webkit-keyframes slide {
+    0% {margin-left: 0px;}
+    10% {margin-left: 0px;}
+    20% {margin-left: -940px;}
+    30% {margin-left: -940px;}
+    40% {margin-left: -1880px;}
+    50% {margin-left: -1880px;}
+    60% {margin-left: -2820px;}
+    70% {margin-left: -2820px;}
+    80% {margin-left: -3760px;}
+    90% {margin-left: -3760px;}
+  }
+}
+@media screen and (min-width: 1000px) {
+  .slide{
+    padding:0;
+    margin:0 210px;
+    
+  }
+  .slide img{
+    height:600px;
+    width:1100px;
+    transition:transform 0.2s;
+
+  }
+
+  @-webkit-keyframes slide {
+    0% {margin-left: 0px;}
+    10% {margin-left: 0px;}
+    20% {margin-left: -1520px;}
+    30% {margin-left: -1520px;}
+    40% {margin-left: -3040px;}
+    50% {margin-left: -3040px;}
+    60% {margin-left: -4560px;}
+    70% {margin-left: -4560px;}
+    80% {margin-left: -6080px;}
+    90% {margin-left: -6080px;}
+  }
+}
+
+/*slideshow end */
+
+/*link bar begin*/
+@media screen and (max-width: 1000px) {
+  .ifrm-link-bar {
+    overflow:hidden;
+    background-color:rgb(106, 133, 230);
+    text-align: center;
+    padding:20px;
+  }
+
+  .ifrm-link-bar-mob{
+    display:flex;
+  }
+  
+  .link-bar{
+    flex:50%;
+  }
+
+  .ifrm iframe{
+    height:200px;
+    width:350px
+  }
+}
+@media screen and (min-width: 1000px) {
+  .ifrm-link-bar{
+    display:flex;
+    background-color:rgb(106, 133, 230);
+    text-align: center;
+    padding:20px;
+  }
+
+  .ifrm-link-bar-mob{
+    width:50%;
+    display:flex;
+  }
+
+  .link-bar{
+    width:50%;
+  }
+}
+
+.ifrm{
+  transition:transform 0.3s;
+  padding:10px;
+}
+.ifrm:hover{
+  transform:scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .link{
+      padding:5px;
+      margin:10px 20px 10px 20px;
+      background-color:rgb(29, 54, 145);
+      border-radius:10px;
+    }
+}
+@media screen and (min-width: 1000px) {
+  .link{
+    padding:5px;
+    margin:10px;
+    background-color:rgb(29, 54, 145);
+    border-radius:10px;
+  }
+}
+.link:hover{
+  background-color:rgb(43, 175, 175);
+  border:5px;
+}
+
+.link a{
+  text-decoration: none;
+  color:white;
+  font-size:2rem;
+}
+/*link bar end*/
+
+
+/*copywright begin*/
+.go-up{
+  background-color:rgb(106, 133, 230);
+  text-align: center;
+  padding:5px 0 10px 0;
+}
+.cpy{
+  background-color: blue;
+  color:white;
+  text-align:center;
+  padding:15px 0;
+}
+.cpy p{
+  margin:0;
+}
+/*copywright end*/

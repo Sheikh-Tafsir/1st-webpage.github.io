@@ -1,0 +1,312 @@
+/*icon begins*/
+.icons{
+    background-color: rgb(56, 86, 196);
+    color:white;
+    display:flex;
+}
+
+.work-hour{
+    width:23%;
+    text-align: right;
+}
+.imail{
+    width:2%;
+    text-align: right;
+    padding:15px 5px;
+    
+}
+.imail a{
+    color:white;
+}
+.mail{
+    width:25%;
+    text-align:left;
+}
+.icon{
+    width:50%;
+    text-align: right;
+    padding:15px 100px;
+
+}
+.icon-style{
+    color:white;
+    padding:5px;
+    border:1px solid white;
+    border-radius: 50%;
+    margin:0 5px;
+    transition:transform 0.3s;
+}
+.icon-style:hover{
+    transform:scale(1.2);
+}
+
+/*icon ends*/
+
+/*head begins*/
+@media screen and (max-width: 1000px) {
+    .header{
+    }
+    .headlogo{
+        text-align:center;
+
+    }
+    .headname{
+        text-align:center;
+    }
+    .headmenu{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+
+    }
+
+    .headmenu a{
+        text-decoration: none;
+        background-color:rgb(106, 133, 230);
+        border-radius:10px;
+        color:black;
+        font-size: 2rem;
+        font-weight:bold;
+        padding:10px;
+        margin:5px 30px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .header{
+        display:flex;
+    }
+    .headlogo{
+        width:15%;
+        text-align:right;
+    }
+    .headname{
+        width:30%;
+    }
+    .headmenu{
+        text-align:center;
+        width:55%;
+        padding:20px;
+    }
+
+    .headmenu a{
+        text-decoration: none;
+        color:black;
+        font-size: 2rem;
+        font-weight:bold;
+        padding:0 20px;
+    }
+}
+.headmenu a:hover{
+    background-color: rgb(100, 116, 145);
+    border-radius: 10px;
+}
+/*head ends*/
+
+/*slide show begin*/
+.slideshow{
+    display:flex;
+    overflow:hidden;
+    -webkit-animation: slide 20s ease infinite;
+
+}
+.slide{
+    padding:0;
+  
+}
+.slide img{
+    height:600px;
+    width:1520px;
+    transition:transform 0.2s;
+
+}
+.slide img:hover{
+  transform:scale(1.1)
+}
+
+
+@-webkit-keyframes slide {
+  0% {margin-left: 0px;}
+  10% {margin-left: 0px;}
+  20% {margin-left: -1520px;}
+  30% {margin-left: -1520x;}
+  40% {margin-left: -3040px;}
+  50% {margin-left: -3040px;}
+  60% {margin-left: -4560px;}
+  70% {margin-left: -4560px;}
+  80% {margin-left: -6080px;}
+  90% {margin-left: -6080px;}
+}
+
+/*slideshow end*/
+@media screen and (max-width: 1000px) {
+    .back{
+        background-image: url("images/anime2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:900px;
+    }
+
+    .banner{
+        padding:200px 100px ;
+        color:whitesmoke;
+    }
+    .banner h4{
+        width:33%;
+        background-color:whitesmoke;
+        color:black;
+        font-weight:bold;
+        border-radius:2px;
+        padding:5px;   
+    }
+    .banner h1{
+        width:100%;
+        font-size:4rem;
+        font-weight:bold;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .back{
+        background-image: url("images/anime2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .banner{
+        padding:200px;
+        color:whitesmoke;
+    }
+    .banner h4{
+        width:18%;
+        background-color:whitesmoke;
+        color:black;
+        font-weight:bold;
+        border-radius:2px;
+        padding:5px;   
+    }
+    .banner h1{
+        width:70%;
+        font-size:4rem;
+        font-weight:bold;
+    }
+}
+
+.banner p{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+.btn{
+    background-color: rgb(56, 86, 196);
+    color:white;
+    padding:5px 10px;
+    border-radius:10px;
+    font-weight:bold;
+
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/*tail start*/
+@media screen and (max-width: 1000px) {
+    .tail{
+        /*display:flex;*/
+        background-color:rgb(56, 86, 196);
+        color:white;
+    }
+    .tail p,a{
+        font-size: 1.1rem;
+    }
+    .contacts{
+        padding:20px 40px;
+    }
+    .contacts p{
+        margin:0;
+    }
+
+    .follow{
+        padding:20px 40px;
+    }
+
+    .bio{
+        padding:20px 40px;
+        
+    }
+    .bio p{
+        margin:0;
+    }
+
+    .tailmid{
+        padding:20px 40px;
+    }
+    .tailmid p{
+        font-size:1.2rem;
+    }
+    .tailogo{
+        padding:0 50px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .tail{
+        display:flex;
+        background-color:rgb(56, 86, 196);
+        color:white;
+    }
+
+    .contacts{
+        width:25%;
+        padding:20px 100px;
+    }
+    .contacts p{
+        margin:0;
+    }
+
+    .follow{
+        width:20%;
+        padding:20px;
+    }
+
+    .bio{
+        width:25%;
+        padding:20px 0px;
+        
+    }
+    .bio p{
+        margin:0;
+    }
+
+    .tailmid{
+        width:30%;
+        padding:20px 0;
+    }
+    .tailmid p{
+        font-size:1.2rem;
+    }
+    .tailogo{
+        padding:0 50px;
+    }
+}
+
+.follow a{
+    text-decoration: none;
+    color:white;
+}
+
+.tail-icon-style{
+    color:white;
+    padding:5px;
+    margin:0 5px;
+    transition:transform 0.3s;
+}
+
+.cpy{
+    background-color: blue;
+    color:white;
+    text-align:center;
+    padding:15px 0;
+}
+.cpy p{
+    margin:0;
+}

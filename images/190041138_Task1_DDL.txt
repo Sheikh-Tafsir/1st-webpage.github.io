@@ -1,0 +1,69 @@
+CREATE TABLE NLB_Branch
+(
+ID INT, 
+Adress VARCHAR2(30),
+Name VARCHAR2(30),
+Year_of_establishment VARCHAR2(30),
+CONSTRAINT NLB_Branch_pk PRIMARY KEY(ID)
+);
+CREATE TABLE USER
+(
+Username VARCHAR2(30),
+Name VARCHAR2(30),
+DOB VARCHAR2(30),
+Hometown VARCHAR2(30),
+Occupation VARCHAR2(30),
+Gender VARCHAR2(30),
+Branch_name VARCHAR2(30),
+ID INT,
+CONSTRAINT USER_PK PRIMARY KEY(Username),
+CONSTRAINT User_fk1 FOREIGN KEY(Branch_name) REFERENCES NLB_Branch(Name)
+);
+CREATE TABLE Stuff
+(
+NID INT,
+Name VARCHAR2(30),
+Blood_group VARCHAR2(30),
+Job_catagory VARCHAR2(30),
+Birthdate VARCHAR2(30),
+ID INT,
+Branch_name VARCHAR2(30),
+CONSTRAINT STUFF_PK PRIMARY KEY(NID),
+CONSTRAINT NLB_Branch_fk FOREIGN KEY(Branch_name) REFERENCES NLB_Branch(Name)
+);
+
+CREATE TABLE Publisher
+(
+Name VARCHAR2(30),
+Year INT,
+City_of_operation VARCHAR2(30),
+CONSTRAINT PUBLISHER_PK PRIMARY KEY(City_of_operation)
+);
+CREATE TABLE BOOK
+(
+ID INT,
+Book_name VARCHAR2(30),
+Author VARCHAR2(30),
+Publisher VARCHAR2(30),
+Price VARCHAR2(30),
+Study_area VARCHAR2(30),
+CONSTRAINT BOOK_PK PRIMARY KEY(Book_name),
+CONSTRAINT Publisher_fk FOREIGN KEY(Publisher) REFERENCES Publisher(Name)
+CONSTRAINT Publisher_fk2 FOREIGN KEY(Publisher) REFERENCES Publisher(City_of_operation)
+); 
+CREATE TABLE Issue
+(
+
+User_ID INT,
+Branch_name VARCHAR2(30),
+Book_name VARCHAR2(30),
+Employe_ID INT,
+Date VARCHAR2(30),
+Days VARCHAR2(30),
+CONSTRAINT ISSUE_PK PRIMARY KEY(Days)
+,CONSTRAINT USER_FK FOREIGN KEY(User_ID) REFERENCES User(ID),
+CONSTRAINT BOOK_FK FOREIGN KEY(Book_name) REFERENCES BOOK(Book_name),
+CONSTRAINT EMPLOYE_FK FOREIGN KEY(Employe_ID) REFERENCES Stuff(ID)
+);
+
+there is full participation among entities.
