@@ -22,5 +22,10 @@
 - Responsive web design, aLso has smartphone view
 - Our contacts and adress
 
+## Stats
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Sheikh-Tafsir&theme=radical&repo=1st-webpage.github.io
+)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Website Link
 https://sheikh-tafsir.github.io/1st-webpage.github.io/
+
