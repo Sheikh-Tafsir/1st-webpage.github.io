@@ -1,3 +1,7 @@
+body{
+  margin:0;
+  padding:0;
+}
 /*icon begins*/
 .icons{
   background-color: rgb(56, 86, 196);
@@ -94,8 +98,9 @@
 
 
 .headmenu a:hover{
-  background-color: rgb(100, 116, 145);
-  border-radius: 10px;
+  background-color: rgb(47, 82, 207);
+  color:white;
+  border-radius: 7px;
 }
 /*header end*/
 

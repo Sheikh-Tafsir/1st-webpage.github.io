@@ -154,8 +154,9 @@ body{
     }
 }
 .headmenu a:hover{
-    background-color: rgb(65, 197, 169);
-    border-radius: 10px;
+    background-color: rgb(47, 82, 207);
+    color:white;
+    border-radius: 7px;
 }
 /*head ends*/
 
