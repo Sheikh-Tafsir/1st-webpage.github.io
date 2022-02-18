@@ -13,11 +13,12 @@ body{
     .work-hour{
         width:23%;
         text-align: right;
+        padding:10px;
     }
     .imail{
         width:2%;
         text-align: right;
-        padding:15px 5px;
+        padding:26px 0;
         
     }
     .imail a{
@@ -26,6 +27,7 @@ body{
     .mail{
         width:25%;
         text-align:left;
+        padding:10px;
     }
     .icon{
         width:50%;
@@ -35,7 +37,7 @@ body{
     }
     .icon-style{
         color:white;
-        padding:5px;
+        padding:10px;
         border:1px solid white;
         border-radius: 50%;
         margin:0 5px;
@@ -372,6 +374,7 @@ body{
 
 .cpy{
     background-color: blue;
+    /*background-color:#060930;*/
     color:white;
     text-align:center;
     padding:15px 0;
